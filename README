@@ -1,0 +1,52 @@
+CS260 - Programming Assignment 3 - Binary Search Trees (parts 1 and 2)
+
+The purpose of this assignment is to give you some practice working with binary search trees. 
+
+
+Overview
+
+In this assignment, you’ll write the logic to create, print, destroy, and copy binary search trees, and insert and delete nodes. 
+
+This assignment will be completed over the course of two weeks.  For the first week, do all items not in blue (this will be uploaded for review in week 1).  For the 2nd week, add the items listed in blue and submit it for grading.
+
+Note: Do not upload for review any functionality shown in blue.  If you finish the other stuff early, upload that for review before adding the 2nd week’s functionality.
+
+
+Operational Details
+
+Your program should do the following:
+1. Create a binary search tree of strings (use strings, not null-terminated character arrays) which will be arranged in alphabetical order.
+2. Insert the following names (in the order given here): Jynx, Charmander, Snorlax, Diglett, Kakuna, Meowth, Pikachu, Blastoise, Squirtle, Ivysaur, Bulbasaur, Abra
+3. Print the tree contents (space delimited) using a recursive inorder traversal
+4. Print the tree contents (space delimited) using a recursive postorder traversal
+5. Print the tree contents (space delimited) using a recursive preorder traversal
+6. Make a deep copy of the tree (we’ll use this in step 9)
+BinTree* BinTree::copy() const;
+7. Delete Squirtle (from the original tree) and reprint the tree (denote who you’re deleting; e.g. print: “Deleting Squirtle: “ then print the tree in alphabetical order (inorder). Do the same for each of the following deletes.
+8. Delete Meowth and reprint the tree (inorder)
+9. Delete Blastoise and reprint the tree (inorder)
+10. Delete Jynx and reprint the tree (inorder)
+11. Print the copy of the tree you made in step 6 using inOrder, then postOrder, and lastly preOrder processing (should look like just like the prints done in steps 3,4, and 5)
+12. Remove all nodes in the original tree (using a removeAll function, which utilized recursion).
+NOTE: for the 2nd week this operation will be done on the copy instead.
+13. Reprint the original tree (should print nothing)
+NOTE: for the 2nd week, this operation will be done on the copy instead.
+
+Technical details
+1. Your first two lines of output should be:
+      CS260, A5-Binary Trees
+      Author: Your name
+2. You should implement a binary search tree class
+You may implement the Tree class as a template (more flexible) or not (possibly easier, but much less flexible)
+3. When the names are printed out, print the level of the node containing the name in (). For example, after the first four  names are added, printing the list inOrder would show:
+Charmander(1) Diglet(2) Jynx(0) Snorlax(1)
+This will require your recursive print routines to get an additional argument (level), which you simply increment on the recursive call.
+
+
+Very Important Stuff
+
+Program should be well written and function properly.
+All programs should follow the class's Coding Conventions
+
+Post/Submit the following:
+A zip file named BST.zip containing your executable and all your .cpp and .h files
